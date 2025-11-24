@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Purity Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="the-form">
+                <h1>Purity Calculator</h1>
+                <div class="form-group">
+                    <label>Total Sample Amount:</label>
+                    <input id="amount" type="number" placeholder="Enter amount">
+                </div>
+
+                <div class="form-group">
+                    <label>Unit:</label>
+                    <select id="unit">
+                        <option value="g">g (gram)</option>
+                        <option value="mg">mg (milligram)</option>
+                        <option value="kg">kg (kilogram)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Purity Percentage (%):</label>
+                    <input id="purity" type="number" placeholder="Example: 40">
+                </div>
+
+                <button onclick="calculate()">Calculate Pure Substance</button>
+            </div>
+            <div class="result" id="resultBox"></div>
+        </div>
+        <p class="auther">Fateme Baseri</p>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
